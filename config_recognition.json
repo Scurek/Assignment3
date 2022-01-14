@@ -1,0 +1,12 @@
+{
+    "perfectly_detected_ears": {
+        "train_path" : "data/perfectly_detected_ears/train",
+        "test_path" : "data/perfectly_detected_ears/test",
+        "annotations_path" : "data/perfectly_detected_ears/annotations/recognition/ids.csv"
+    },
+   "my_ears": {
+        "train_path" : "data/my_ears/train",
+        "test_path" : "data/my_ears/test",
+        "annotations_path" : "data/my_ears/annotations/ids.csv"
+   }
+}
