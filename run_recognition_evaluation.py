@@ -58,6 +58,8 @@ class EvaluateAll:
         import feature_extractors.lbp.extractor as lbp_ext
         lbp = lbp_ext.LBP()
 
+        feature_extractor = pix2pix
+
         train_features_arr = []
         y = []
 
@@ -73,7 +75,7 @@ class EvaluateAll:
 
             # Apply some preprocessing here
             # Run the feature extractors
-            train_features = pix2pix.extract(img)
+            train_features = feature_extractor.extract(img)
             train_features_arr.append(train_features)
             # train_features = lbp.extract(img)
             # train_features_arr.append(train_features)
@@ -87,16 +89,16 @@ class EvaluateAll:
             ann_name = '/'.join(re.split(r'/|\\', im_name)[2:])
             # ann_name = '/'.join(im_name.split('/', "\\\\")[2:])
             x.append(cla_d[ann_name])
-            test_features = pix2pix.extract(img)
+            test_features = feature_extractor.extract(img)
             test_features_arr.append(test_features)
         print("Calculating distances...")
         Y_plain = cdist(test_features_arr, train_features_arr, 'cosine')
-
         r1 = eval.compute_rank1(Y_plain, x, y)
         print('Pix2Pix Rank 1[%]', r1)
+
         # r5 = eval.compute_rankX(Y_plain, y, 5)
         # print('Pix2Pix Rank 5[%]', r5)
-        # eval.CMC_plot(Y_plain, y)
+        eval.CMC_plot(Y_plain, x, y, show=True)
 
         # Y_plain = cdist(train_features_arr, train_features_arr, 'jensenshannon')
         # r1 = eval.compute_rank1(Y_plain, y)

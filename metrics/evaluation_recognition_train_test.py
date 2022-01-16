@@ -97,7 +97,7 @@ class Evaluation:
 
         if show:
             plt.plot(x, y)
-            plt.ylabel('Rank')
+            plt.xlabel('Rank')
             plt.ylabel('Recognition rate')
             plt.show()
 
