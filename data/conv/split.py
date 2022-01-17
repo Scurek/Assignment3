@@ -4,8 +4,8 @@ import re
 
 import cv2
 
-data_path = "../perfectly_detected_ears"
-folder = "test"
+data_path = "../my_ears"
+folder = "train"
 
 
 def get_annotations(annot_f):

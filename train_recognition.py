@@ -33,7 +33,7 @@ def prepare_training_data():
         # Read an image
         img = cv2.imread(im_name)
         img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-        img = cv2.resize(img, (100, 100))
+        img = cv2.resize(img, (200, 200))
         faces.append(img)
 
         ann_name = '/'.join(re.split(r'/|\\', im_name)[2:])
@@ -81,7 +81,7 @@ def test_pred():
         #     im_name = im_list[i]
         # Read an image
         img = cv2.imread(im_name)
-        img = cv2.resize(img, (100, 100))
+        img = cv2.resize(img, (200, 200))
         label, confidence = predict(img)
 
         ann_name = '/'.join(re.split(r'/|\\', im_name)[2:])

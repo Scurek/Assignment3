@@ -1,0 +1,53 @@
+{
+  "data_location": "data/Roboflow",
+  "perfectly_detected_ears": {
+    "project_name": "ears---ibb",
+    "datasets": [
+      {
+        "name": "No Augmentation",
+        "version": 6
+      },
+      {
+        "name": "Rotation",
+        "version": 11
+      },
+      {
+        "name": "Blur",
+        "version": 12
+      },
+      {
+        "name": "Brightness",
+        "version": 13
+      },
+      {
+        "name": "All Augmentations",
+        "version": 14
+      }
+    ]
+  },
+  "my_ears": {
+    "project_name": "myears",
+    "datasets": [
+      {
+        "name": "No Augmentation",
+        "version": 2
+      },
+      {
+        "name": "Rotation",
+        "version": 3
+      },
+      {
+        "name": "Blur",
+        "version": 4
+      },
+      {
+        "name": "Brightness",
+        "version": 5
+      },
+      {
+        "name": "All Augmentations",
+        "version": 6
+      }
+    ]
+  }
+}

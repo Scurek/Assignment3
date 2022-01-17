@@ -24,7 +24,6 @@ class Evaluation:
                 count_all += 1
                 if imin:
                     count_correct += 1
-        print(count_all)
         return count_correct / count_all * 100
 
     # Add your own metrics here, such as rank5, (all ranks), CMC plot, ROC, ...
@@ -55,7 +54,6 @@ class Evaluation:
                 count_all += 1
                 if i in s[0:rank]:
                     count_correct += 1
-        print(count_all, str(Y.shape))
         return count_correct / count_all * 100
 
     def CMC_plot(self, Y, y, x, show=True):
@@ -93,7 +91,7 @@ class Evaluation:
         x = range(1, len(classes) + 1)
         y = np.zeros(len(classes), dtype=float)
         for i, count in enumerate(count_correct):
-            y[i] = count / count_all
+            y[i] = count / count_all * 100
 
         if show:
             plt.plot(x, y)

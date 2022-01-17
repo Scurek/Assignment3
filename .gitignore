@@ -3,6 +3,7 @@ outside
 output
 **/__pycache__/
 *.png
+data/Roboflow
 !data/perfectly_detected_ears/test/*.png
 !data/perfectly_detected_ears/train/*.png
 !data/my_ears/train/*.png

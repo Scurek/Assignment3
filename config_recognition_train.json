@@ -7,6 +7,6 @@
    "my_ears": {
         "train_path" : "data/my_ears/train",
         "test_path" : "data/my_ears/test",
-        "annotations_path" : "data/my_ears/annotations/ids.csv"
+        "annotations_path" : "data/my_ears/annotations/recognition/ids.csv"
    }
 }

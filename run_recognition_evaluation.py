@@ -57,6 +57,8 @@ class EvaluateAll:
         pix2pix = p2p_ext.Pix2Pix()
         import feature_extractors.lbp.extractor as lbp_ext
         lbp = lbp_ext.LBP()
+        import feature_extractors.block_lbp.extractor as block_lbp_ext
+        block_lbp = block_lbp_ext.BlockLBP()
 
         feature_extractor = pix2pix
 
@@ -92,7 +94,8 @@ class EvaluateAll:
             test_features = feature_extractor.extract(img)
             test_features_arr.append(test_features)
         print("Calculating distances...")
-        Y_plain = cdist(test_features_arr, train_features_arr, 'cosine')
+        Y_plain = cdist(test_features_arr, train_features_arr, 'jensenshannon')
+        print("Calculating measures...")
         r1 = eval.compute_rank1(Y_plain, x, y)
         print('Pix2Pix Rank 1[%]', r1)
 
