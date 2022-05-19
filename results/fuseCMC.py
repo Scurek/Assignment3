@@ -13,18 +13,18 @@ import matplotlib.pyplot as plt
 #     "pix2pix (brightness)": 'pix2pix_v_5.res'
 # }
 
-# dataset = "my_ears"
-# title = "My Ears - pix2pix"
-# CMC_list = {
-#     "No Augmentation": 'pix2pix_v_2.res',
-#     "Rotation": 'pix2pix_v_3.res',
-#     "Blur": 'pix2pix_v_4.res',
-#     "Brightness": 'pix2pix_v_5.res',
-#     "All Augmentations": 'pix2pix_v_6.res'
-# }
+dataset = "my_ears"
+title = "Direct Pixel Comparison"
+CMC_list = {
+    "No Augmentation": 'pix2pix_v_2.res',
+    "Rotation": 'pix2pix_v_3.res',
+    "Blur": 'pix2pix_v_4.res',
+    "Brightness": 'pix2pix_v_5.res',
+    "All Augmentations": 'pix2pix_v_6.res'
+}
 
 # dataset = "my_ears"
-# title = "My Ears - LBP"
+# title = "Local Binary Patters"
 # CMC_list = {
 #     "No Augmentation": 'LBP_v_2.res',
 #     "Rotation": 'LBP_v_3.res',
@@ -34,7 +34,7 @@ import matplotlib.pyplot as plt
 # }
 
 # dataset = "my_ears"
-# title = "My Ears - Bloc LBP"
+# title = "Block Local Binary Patters"
 # CMC_list = {
 #     "No Augmentation": 'BlocLBP_v_2.res',
 #     "Rotation": 'BlocLBP_v_3.res',
@@ -43,18 +43,18 @@ import matplotlib.pyplot as plt
 #     "All Augmentations": 'BlocLBP_v_6.res'
 # }
 
-dataset = "my_ears"
-title = "My Ears - Bloc LBP with MLP"
-CMC_list = {
-    "No Augmentation": 'DNN_BlocLBP_v_2.res',
-    "Rotation": 'DNN_BlocLBP_v_3.res',
-    "Blur": 'DNN_BlocLBP_v_4.res',
-    "Brightness": 'DNN_BlocLBP_v_5.res',
-    "All Augmentations": 'DNN_BlocLBP_v_6.res'
-}
+# dataset = "my_ears"
+# title = "Block Local Binary Patters with MLP"
+# CMC_list = {
+#     "No Augmentation": 'DNN_BlocLBP_v_2.res',
+#     "Rotation": 'DNN_BlocLBP_v_3.res',
+#     "Blur": 'DNN_BlocLBP_v_4.res',
+#     "Brightness": 'DNN_BlocLBP_v_5.res',
+#     "All Augmentations": 'DNN_BlocLBP_v_6.res'
+# }
 
 # dataset = "my_ears"
-# title = "My Ears - CNN Comparison"
+# title = "ResNet"
 # CMC_list = {
 #     "No Changes": 'best_model_d_myears_v_1_r_1_e_50.res',
 #     "Grayscale": 'best_model_d_myears_v_2_r_1_e_50.res',

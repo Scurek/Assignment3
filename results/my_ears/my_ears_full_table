@@ -1,0 +1,30 @@
+\multirow{5}*{\rotatebox[origin=c]{90}{DPC}}& No Augmentation & 7.27 & 21.09 \\ 
+& Rotation & 4.00 & 13.45 \\ 
+& Blur & 7.27 & 21.09 \\ 
+& Brightness & 10.91 & 23.64 \\ 
+& All Augmentations & 9.09 & 17.82 \\ 
+\midrule\multirow{5}*{\rotatebox[origin=c]{90}{LBP}}& No Augmentation & 1.09 & 4.73 \\ 
+& Rotation & 0.00 & 4.36 \\ 
+& Blur & 1.09 & 4.73 \\ 
+& Brightness & 0.36 & 4.36 \\ 
+& All Augmentations & 1.09 & 4.36 \\ 
+\midrule\multirow{5}*{\rotatebox[origin=c]{90}{BLPB}}& No Augmentation & 2.91 & 9.09 \\ 
+& Rotation & 2.55 & 12.73 \\ 
+& Blur & 2.91 & 9.09 \\ 
+& Brightness & 2.55 & 9.82 \\ 
+& All Augmentations & 2.18 & 8.36 \\ 
+\midrule\multirow{5}*{\rotatebox[origin=c]{90}{BLPB + MLP}}& No Augmentation & 8.30 & 20.42 \\ 
+& Rotation & 8.65 & 22.15 \\ 
+& Blur & 6.23 & 23.88 \\ 
+& Brightness & 8.30 & 21.45 \\ 
+& All Augmentations & 7.61 & 21.80 \\ 
+\midrule\multirow{9}*{\rotatebox[origin=c]{90}{ResNet}}& No Changes & 80.62 & 83.74 \\ 
+& Grayscale & 81.66 & 83.39 \\ 
+& Rotation & 79.58 & 85.47 \\ 
+& Blur & 77.85 & 81.31 \\ 
+& Brightness & 78.89 & 83.74 \\ 
+& All Augmentations & 78.55 & 82.70 \\ 
+& Grayscale (Repeated) & 84.08 & 88.58 \\ 
+& Rotation (Repeated) & 85.47 & 89.27 \\ 
+& Rotation (Repeated, depth 152) & 88.58 & 93.08 \\ 
+\midrule
